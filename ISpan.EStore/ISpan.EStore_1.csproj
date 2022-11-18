@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{557FEA1E-0647-4783-B778-2D90517BAE23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ISpan.EStore</RootNamespace>
+    <AssemblyName>ISpan.EStore</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISpan.Utility">
+      <HintPath>..\..\..\20221110_iSpan\20221110_iSpan.Solution\ISpan.Utility\bin\Debug\ISpan.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ucGender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucGender.Designer.cs">
+      <DependentUpon>ucGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHobby.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHobby.Designer.cs">
+      <DependentUpon>ucHobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProductCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProductCategoryForm.Designer.cs">
+      <DependentUpon>CreateProductCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProductForm.Designer.cs">
+      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUserForm.Designer.cs">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoCheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoCheckBox.Designer.cs">
+      <DependentUpon>DemoCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoCheckBoxList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoCheckBoxList.Designer.cs">
+      <DependentUpon>DemoCheckBoxList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoGender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoGender.Designer.cs">
+      <DependentUpon>DemoGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoHobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoHobby.Designer.cs">
+      <DependentUpon>DemoHobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoRadioButtonList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoRadioButtonList.Designer.cs">
+      <DependentUpon>DemoRadioButtonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductCategoryForm.Designer.cs">
+      <DependentUpon>EditProductCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infra\DAOs\UserDAO.cs" />
+    <Compile Include="Infra\ValidationHelper.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DTOs\UserDTO.cs" />
+    <Compile Include="Models\Services\UserService.cs" />
+    <Compile Include="Models\ViewModels\LoginVM.cs" />
+    <Compile Include="Models\ViewModels\ProductCategoryVM.cs" />
+    <Compile Include="Models\ViewModels\ProductIndexVM.cs" />
+    <Compile Include="Models\ViewModels\UserIndexVM.cs" />
+    <Compile Include="ProductCategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductCategoriesForm.Designer.cs">
+      <DependentUpon>ProductCategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infra\Extensions\StringExtenstions.cs" />
+    <Compile Include="UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\ucGender.resx">
+      <DependentUpon>ucGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHobby.resx">
+      <DependentUpon>ucHobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProductCategoryForm.resx">
+      <DependentUpon>CreateProductCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProductForm.resx">
+      <DependentUpon>CreateProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUserForm.resx">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoCheckBox.resx">
+      <DependentUpon>DemoCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoCheckBoxList.resx">
+      <DependentUpon>DemoCheckBoxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoGender.resx">
+      <DependentUpon>DemoGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoHobby.resx">
+      <DependentUpon>DemoHobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoRadioButtonList.resx">
+      <DependentUpon>DemoRadioButtonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductCategoryForm.resx">
+      <DependentUpon>EditProductCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCategoriesForm.resx">
+      <DependentUpon>ProductCategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ISpan.EStore.Models.ViewModels.ProductCategoryVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.EStore.Models.ViewModels.ProductIndexVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.EStore.Models.ViewModels.UserIndexVM.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
